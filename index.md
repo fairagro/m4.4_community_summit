@@ -1,4 +1,5 @@
-# SciWIn - A Concept for a FAIR Scientific Workflow Infrastructure
+Antonia Leidel (Leibniz Institute of Plant Genetics and Crop Plant Research, IPK), Dr. Jens Krumsieck (Thünen Institute), Patrick König (Leibniz Institute of Plant Genetics and Crop Plant Research, IPK), Dr. Harald von Waldow (Thünen Institute) - on behalf of the FAIRagro consortium
+
 
 ## Introduction
 

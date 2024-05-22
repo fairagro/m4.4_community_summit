@@ -1,4 +1,4 @@
-# A Concept for a FAIR Scientific Workflow Infrastructure
+# SciWIn - A Concept for a FAIR Scientific Workflow Infrastructure
 
 ## Introduction
 

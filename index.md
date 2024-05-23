@@ -11,7 +11,7 @@ on behalf of the FAIRagro consortium
 
 ## Introduction
 
-FAIR research is becoming increasingly important, but developing and publishing FAIR workflows can be challenging. A Scientific Workflow Infrastructure (SciWIn) will facilitate collaboration and increase reusability by giving researchers access to workflows that can be combined and extended. SciWIn will also support scientists during development with versioning and help them to formally specify their workflows, making them executable on workflow engines. Detailed documentation will be provided through the use of FAIR Digital Objects (FDOs). 
+FAIR[^1] research is becoming increasingly important, but developing and publishing FAIR workflows can be challenging. A Scientific Workflow Infrastructure (SciWIn) will facilitate collaboration and increase reusability by giving researchers access to workflows that can be combined and extended. SciWIn will also support scientists during development with versioning and help them to formally specify their workflows, making them executable on workflow engines. Detailed documentation will be provided through the use of FAIR Digital Objects (FDOs). 
  
 
 ## Concept
@@ -47,3 +47,5 @@ FAIR research is becoming increasingly important, but developing and publishing 
 ### Nextflow
 - Workflow management system for scalable and portable workflows
 - Independent execution of different processes written in scripting language (e.g. Bash, Python,...) on Linux platform 
+
+[^1]: **F**indable **A**ccessible **I**nteroperable **R**eusable

@@ -1,7 +1,7 @@
 ---
 ---
-
 @import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap');
 
 body {
     font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -18,6 +18,22 @@ body {
 
 .page-header {
     background-image: linear-gradient(90deg, rgb(0, 145, 122) 0%, rgb(167, 198, 55) 100%);
+    text-align: left;
+    .wrapper{
+        @include large {
+            max-width: 64rem;
+            padding: 2rem 6rem;
+            margin: 0 auto;
+          }
+        
+          @include medium {
+            padding: 2rem 4rem;
+          }
+        
+          @include small {
+            padding: 2rem 1rem;
+          }
+    }
     .logo {
         width: 200px;
     }

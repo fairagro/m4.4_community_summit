@@ -1,10 +1,10 @@
 # SciWIn - A Concept for a FAIR Scientific Workflow Infrastructure
 <small>
 
-- Antonia Leidel (Leibniz Institute of Plant Genetics and Crop Plant Research, IPK)
-- Dr. Jens Krumsieck (Thünen Institute) [![ORCID: 0000-0001-6242-5846](./_include/orcid.png)](https://orcid.org/0000-0001-6242-5846)
-- Patrick König (Leibniz Institute of Plant Genetics and Crop Plant Research, IPK) [![ORCID: 0000-0002-8948-6793](./_include/orcid.png)](https://orcid.org/0000-0002-8948-6793)
-- Dr. Harald von Waldow (Thünen Institute) [![ORCID: 0000-0003-4800-2833](./_include/orcid.png)](https://orcid.org/0000-0003-4800-2833)
+- Antonia Leidel (Leibniz Institute of Plant Genetics and Crop Plant Research, IPK) [![E-Mail](./_include/mail.svg)](mailto:leidel@ipk-gatersleben.de)
+- Dr. Jens Krumsieck (Thünen Institute) [![ORCID: 0000-0001-6242-5846](./_include/orcid.png)](https://orcid.org/0000-0001-6242-5846) [![E-Mail](./_include/mail.svg)](mailto:jens.krumsieck@thuenen.de)
+- Patrick König (Leibniz Institute of Plant Genetics and Crop Plant Research, IPK) [![ORCID: 0000-0002-8948-6793](./_include/orcid.png)](https://orcid.org/0000-0002-8948-6793) [![E-Mail](./_include/mail.svg)](mailto:koenig@ipk-gatersleben.de)
+- Dr. Harald von Waldow (Thünen Institute) [![ORCID: 0000-0003-4800-2833](./_include/orcid.png)](https://orcid.org/0000-0003-4800-2833) [![E-Mail](./_include/mail.svg)](mailto:harald.vonwaldow@thuenen.de)
 
 on behalf of the FAIRagro consortium
 </small>

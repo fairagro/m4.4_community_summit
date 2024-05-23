@@ -22,19 +22,24 @@ body {
     .wrapper{
         @include large {
             max-width: 64rem;
-            padding: 2rem 6rem;
+            padding: 0 6rem;
             margin: 0 auto;
           }
         
           @include medium {
-            padding: 2rem 4rem;
+            padding: 0 4rem;
           }
         
           @include small {
-            padding: 2rem 1rem;
+            padding: 0 1rem;
           }
     }
     .logo {
         width: 200px;
+        margin-bottom: 1rem;
     }
+}
+
+a{
+  color: #00917a;
 }

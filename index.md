@@ -1,4 +1,5 @@
-# SciWIn - A Concept for a FAIR Scientific Workflow Infrastructure
+# SciWIn
+## A Concept for a FAIR Scientific Workflow Infrastructure
 
 - Antonia Leidel (Leibniz Institute of Plant Genetics and Crop Plant Research, IPK) [![E-Mail](./assets/mail.svg)](mailto:leidel@ipk-gatersleben.de)
 - Dr. Jens Krumsieck (Thünen Institute) [![ORCID: 0000-0001-6242-5846](./assets/orcid.png)](https://orcid.org/0000-0001-6242-5846) [![E-Mail](./assets/mail.svg)](mailto:jens.krumsieck@thuenen.de)

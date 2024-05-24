@@ -24,34 +24,42 @@ body {
 }
 
 .page-header {
-  background-image: linear-gradient(90deg, rgb(0, 145, 122) 0%, rgb(167, 198, 55) 100%);
-  text-align: left;
-  .wrapper {
-    @include large {
-      max-width: 64rem;
-      padding: 0 6rem;
-      margin: 0 auto;
-    }
-
-    @include medium {
-      padding: 0 4rem;
-    }
-
-    @include small {
-      padding: 0 1rem;
-    }
-  }
+  text-align: left;  
   .logo {
     width: 200px;
     margin-bottom: 1rem;
   }
 }
 
+.wrapper {
+  @include large {
+    max-width: 64rem;
+    padding: 0 6rem;
+    margin: 0 auto;
+  }
+
+  @include medium {
+    padding: 0 4rem;
+  }
+
+  @include small {
+    padding: 0 1rem;
+  }
+}
+
 footer {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-image: linear-gradient(90deg, rgb(0, 145, 122) 0%, rgb(167, 198, 55) 100%) 1;
+
   .coop {
     display: flex;
     a {
       flex: 1 1 0;
+      min-width: 0;
+      > img {
+        max-width: 100%;
+      }
     }
     justify-content: space-between;
     align-items: center;
@@ -64,4 +72,12 @@ footer {
 
 a {
   color: #00917a;
+}
+
+hr,
+.page-header {
+  background-image: linear-gradient(90deg, rgb(0, 145, 122) 0%, rgb(167, 198, 55) 100%);
+}
+hr {
+  height: 1px;
 }

@@ -46,6 +46,8 @@ SciWIn outputs reproducible research objects as FAIR DOs[^5]. By using already e
 - Workflow management system for scalable and portable workflows
 - Independent execution of different processes written in scripting language (e.g. Bash, Python,...) on Linux platform 
 
+***
+
 [^1]: **F**indable **A**ccessible **I**nteroperable **R**eusable
 [^2]: **C**ommon **W**orkflow **L**anguage
 [^3]: **P**ersistant **ID**entifier

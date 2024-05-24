@@ -17,7 +17,7 @@ body {
   color: #00917a;
 }
 
-.main-content img {
+.main-content > p > img {
   display: flex;
   margin: auto;
   max-width: 90%;
@@ -47,13 +47,19 @@ body {
   }
 }
 
-footer .coop {
-  display: flex;
-  a {
-    flex: 1 1 0;
+footer {
+  .coop {
+    display: flex;
+    a {
+      flex: 1 1 0;
+    }
+    justify-content: space-between;
+    align-items: center;
   }
-  justify-content: space-between;
-  align-items: center;
+  .site-footer-credits,
+  .license {
+    text-align: center;
+  }
 }
 
 a {

@@ -20,6 +20,11 @@ FAIR[^1] research is becoming increasingly important, but developing and publish
 SciWIn will be able to integrate workflows and data from multiple repositories including a SciWIn Workflow Hub which will be developed in the process. Access of different research objects (RO) for workflow development will be handled by a central server. A stable workflow within a research object can be (semi-)automatically transformed into a formal workflow specification (e.g. CWL[^2]).
 The SciWIn Workflow Engine will be able to execute such workflows. Stable Workflows are annotated with meta data and can be published to an appropriate repository that registers it with a PID[^3] (e.g. DOI[^4]).
 
+### Key Components of SciWIn
+1. **SciWIn Workflow Hub**: A dedicated repository developed for SciWIn which will store and manage workflows and data from various sources, promoting interoperability.
+2. **SciWIn Central Server**: The central server will manage access to different ROs. The central server displays the artifacts along with versions and provenance.
+3. **SciWIn Workflow Execution Engine**: This component will execute the workflows and output FAIR DOs[^5].
+
 ## Reusable Data Handling
 A multi-step workflow for data tranformation, modification, pre-processing and integration will be provided by the user. The research object keeps track of different versions and pushes its data to the central server. Versioning furthermore enables iterative development including bug fixes and other changes. The central server facilitates collaboration by providing access to organized reserach objects.
 
@@ -32,7 +37,7 @@ Users will be able to view multiple research objects, download parts of it (e.g.
 Stable workflows can be (semi-) automatically transformed into a formal specification such as CWL. The Formal specification is compatible with workflow publishing platforms and execution engines like Nextflow or SnakeMake (vide infra). Stable workflows will be annotated with metadata and can be published in appropriate repositories using a PID system like DOI.
 
 ## Key benefits
-SciWIn outputs reproducible research objects as FAIR DOs[^5]. By using already existing build blocks of existing workflows a lot of time can be saved, especially for common data integration and processing tasks. Furthermore collaboration between different research groups is possible which can lead to more productivity. Versioning of workflows and data provides reproducible research objects without the pitfall of breaking changes. Publication in appropriate repositories enables multiple benefits.
+SciWIn outputs reproducible research objects as FAIR DOs. By using already existing build blocks of existing workflows a lot of time can be saved, especially for common data integration and processing tasks. Furthermore collaboration between different research groups is possible which can lead to more productivity. Versioning of workflows and data provides reproducible research objects without the pitfall of breaking changes. Publication in appropriate repositories enables multiple benefits.
 
 ## Roadmap
 ![Roadmap](./assets/roadmap.svg)

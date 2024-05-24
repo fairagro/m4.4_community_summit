@@ -47,9 +47,9 @@ body {
   }
 }
 
-footer {
+footer.site-footer {
   border-top-style: solid;
-  border-top-width: 1px;
+  border-top-width: 20px;
   border-image: linear-gradient(90deg, rgb(0, 145, 122) 0%, rgb(167, 198, 55) 100%) 1;
 
   .coop {

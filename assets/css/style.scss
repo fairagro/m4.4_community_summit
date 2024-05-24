@@ -1,10 +1,11 @@
 ---
 ---
+
 @import "{{ site.theme }}";
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap");
 
 body {
-    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .main-content h1,
@@ -13,43 +14,48 @@ body {
 .main-content h4,
 .main-content h5,
 .main-content h6 {
-    color: #00917a;
+  color: #00917a;
+}
+
+.main-content img {
+  display: flex;
+  margin: auto;
+  max-width: 90%;
 }
 
 .page-header {
-    background-image: linear-gradient(90deg, rgb(0, 145, 122) 0%, rgb(167, 198, 55) 100%);
-    text-align: left;
-    .wrapper{
-        @include large {
-            max-width: 64rem;
-            padding: 0 6rem;
-            margin: 0 auto;
-          }
-        
-          @include medium {
-            padding: 0 4rem;
-          }
-        
-          @include small {
-            padding: 0 1rem;
-          }
+  background-image: linear-gradient(90deg, rgb(0, 145, 122) 0%, rgb(167, 198, 55) 100%);
+  text-align: left;
+  .wrapper {
+    @include large {
+      max-width: 64rem;
+      padding: 0 6rem;
+      margin: 0 auto;
     }
-    .logo {
-        width: 200px;
-        margin-bottom: 1rem;
+
+    @include medium {
+      padding: 0 4rem;
     }
+
+    @include small {
+      padding: 0 1rem;
+    }
+  }
+  .logo {
+    width: 200px;
+    margin-bottom: 1rem;
+  }
 }
 
-footer .coop{
+footer .coop {
   display: flex;
   a {
-      flex: 1 1 0;
+    flex: 1 1 0;
   }
-;
   justify-content: space-between;
   align-items: center;
 }
 
-a{
+a {
   color: #00917a;
 }

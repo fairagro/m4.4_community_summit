@@ -40,6 +40,16 @@ body {
     }
 }
 
+footer .coop{
+  display: flex;
+  a {
+      flex: 1 1 0;
+  }
+;
+  justify-content: space-between;
+  align-items: center;
+}
+
 a{
   color: #00917a;
 }

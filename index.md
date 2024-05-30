@@ -1,17 +1,16 @@
-# SciWIn
-## A Concept for a FAIR Scientific Workflow Infrastructure
-
-- Antonia Leidel (Leibniz Institute of Plant Genetics and Crop Plant Research, IPK) [![E-Mail](./assets/mail.svg)](mailto:leidel@ipk-gatersleben.de)
-- Dr. Jens Krumsieck (Thünen Institute) [![ORCID: 0000-0001-6242-5846](./assets/orcid.png)](https://orcid.org/0000-0001-6242-5846) [![E-Mail](./assets/mail.svg)](mailto:jens.krumsieck@thuenen.de)
-- Patrick König (Leibniz Institute of Plant Genetics and Crop Plant Research, IPK) [![ORCID: 0000-0002-8948-6793](./assets/orcid.png)](https://orcid.org/0000-0002-8948-6793) [![E-Mail](./assets/mail.svg)](mailto:koenig@ipk-gatersleben.de)
-- Dr. Harald von Waldow (Thünen Institute) [![ORCID: 0000-0003-4800-2833](./assets/orcid.png)](https://orcid.org/0000-0003-4800-2833) [![E-Mail](./assets/mail.svg)](mailto:harald.vonwaldow@thuenen.de)
-
+- **Antonia Leidel**<sup>1</sup> [![E-Mail](./assets/mail.svg)](mailto:leidel@ipk-gatersleben.de)
+- **Dr. Jens Krumsieck**<sup>2</sup> [![ORCID: 0000-0001-6242-5846](./assets/orcid.png)](https://orcid.org/0000-0001-6242-5846) [![E-Mail](./assets/mail.svg)](mailto:jens.krumsieck@thuenen.de)
+- **Patrick König**<sup>1</sup> [![ORCID: 0000-0002-8948-6793](./assets/orcid.png)](https://orcid.org/0000-0002-8948-6793) [![E-Mail](./assets/mail.svg)](mailto:koenig@ipk-gatersleben.de)
+- **Dr. Harald von Waldow**<sup>2</sup> [![ORCID: 0000-0003-4800-2833](./assets/orcid.png)](https://orcid.org/0000-0003-4800-2833) [![E-Mail](./assets/mail.svg)](mailto:harald.vonwaldow@thuenen.de)
 on behalf of the FAIRagro consortium
 
+<sup>1</sup> Leibniz Institute of Plant Genetics and Crop Plant Research, IPK
+
+<sup>2</sup> Thünen Institute
 
 ## Abstract
 
-FAIR[^1] research is becoming increasingly important, but developing and publishing FAIR workflows can be challenging. A Scientific Workflow Infrastructure (SciWIn) will facilitate collaboration and increase reusability by giving researchers access to workflows that can be combined and extended. SciWIn will also support scientists during development with versioning and help them to formally specify their workflows, making them executable on workflow engines. Detailed documentation will be provided through the use of FAIR Digital Objects (FDOs). 
+FAIR[^1] research is becoming increasingly important, but developing and publishing FAIR computational workflows can be challenging. A Scientific Workflow Infrastructure (SciWIn) will support scientists during data exploration and analysis with version control, the recording of workflows and provenance tracking. Specific tooling will help to formally specify annotated workflows, making them executable on different workflow engines. SciWIn will also facilitate collaboration and let researchers share, re-use, combine and extend workflows and associated data and code. The state-of-art annotation with metadata and encapsulation in FAIR Digital Objects (FDOs) will foster the FAIR publication of high-quality scientific work and help to further establish Open Science practices.
  
 
 ## Concept
@@ -19,11 +18,6 @@ FAIR[^1] research is becoming increasingly important, but developing and publish
 
 SciWIn will be able to integrate workflows and data from multiple repositories including a SciWIn Workflow Hub which will be developed in the process. Access of different research objects (RO) for workflow development will be handled by a central server. A stable workflow within a research object can be (semi-)automatically transformed into a formal workflow specification (e.g. CWL[^2]).
 The SciWIn Workflow Engine will be able to execute such workflows. Stable Workflows are annotated with meta data and can be published to an appropriate repository that registers it with a PID[^3] (e.g. DOI[^4]).
-
-### Key Components of SciWIn
-1. **SciWIn Workflow Hub**: A dedicated repository developed for SciWIn which will store and manage workflows and data from various sources, promoting interoperability.
-2. **SciWIn Central Server**: The central server will manage access to different ROs. The central server displays the artifacts along with versions and provenance.
-3. **SciWIn Workflow Execution Engine**: This component will execute the workflows and output FAIR DOs[^5].
 
 ## Reusable Data Handling
 A multi-step workflow for data tranformation, modification, pre-processing and integration will be provided by the user. The research object keeps track of different versions and pushes its data to the central server. Versioning furthermore enables iterative development including bug fixes and other changes. The central server facilitates collaboration by providing access to organized reserach objects.
@@ -37,7 +31,7 @@ Users will be able to view multiple research objects, download parts of it (e.g.
 Stable workflows can be (semi-) automatically transformed into a formal specification such as CWL. The Formal specification is compatible with workflow publishing platforms and execution engines like Nextflow or SnakeMake (vide infra). Stable workflows will be annotated with metadata and can be published in appropriate repositories using a PID system like DOI.
 
 ## Key benefits
-SciWIn outputs reproducible research objects as FAIR DOs. By using already existing build blocks of existing workflows a lot of time can be saved, especially for common data integration and processing tasks. Furthermore collaboration between different research groups is possible which can lead to more productivity. Versioning of workflows and data provides reproducible research objects without the pitfall of breaking changes. Publication in appropriate repositories enables multiple benefits.
+SciWIn outputs reproducible research objects as FAIR DOs[^5]. By using already existing build blocks of existing workflows a lot of time can be saved, especially for common data integration and processing tasks. Furthermore collaboration between different research groups is possible which can lead to more productivity. Versioning of workflows and data provides reproducible research objects without the pitfall of breaking changes. Publication in appropriate repositories enables multiple benefits.
 
 ## Roadmap
 ![Roadmap](./assets/roadmap.svg)

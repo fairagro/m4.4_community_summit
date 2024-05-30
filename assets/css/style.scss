@@ -24,10 +24,19 @@ body {
 }
 
 .page-header {
-  text-align: left;  
+  text-align: left;
   .logo {
     width: 200px;
     margin-bottom: 1rem;
+  }
+  .brand {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @include large {
+    padding: 2rem 6rem;
   }
 }
 

@@ -26,18 +26,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-wrap: wrap;
-
+    img {
+      max-width: 100%;
+    }
     @include medium {
       flex-wrap: nowrap;
-    }
-    > img:only-child {
-      max-width: 100% !important;
-    }
-    > img:first-child {
-      max-width: 60%;
-    }
-    > img:nth-child(2) {
-      max-width: 40%;
+      > img:only-child {
+        max-width: 100% !important;
+      }
+      > img:first-child {
+        max-width: 60%;
+      }
+      > img:nth-child(2) {
+        max-width: 40%;
+      }
     }
   }
 }

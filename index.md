@@ -21,16 +21,24 @@ As its name implies the **execution of computational workflows** will be a key p
 
 
 ## Re-usable data handling
-A multi-step workflow for data tranformation, modification, pre-processing and integration will be provided by the user. The research object keeps track of different versions and pushes its data to the central server. Versioning furthermore enables iterative development including bug fixes and other changes. The central server facilitates collaboration by providing access to organized reserach objects.
+- The user records ad-hoc workflow for data pre-processing, transformation, analysis, … 
+- Iterative & collaborative workflow development including version control of data and code
+- Creation of shareable research objects with provenance information & metadata
+- SciWIn Hub facilitates collaboration by providing shared access to research objects
 
-## Data Integration
-Users will be able to view multiple research objects, download parts of it (e.g. code, data, metadata, workflows, ...) and recombine those parts in new research objects. Derived parts link back to the original parts on the central server much like GitHub/GitLab forks. This provides an easy way to create new research objects by using already existing building blocks.
+## Integration & exploration
+- Explore research objects (RO) on SciWIn Hub
+- Download parts (code, data, metadata)
+- Recombine artifacts in new research objects
+- Upload to SciWIn Hub to integrate into RO collection
+
 
 ## Workflow execution and FAIR publication
-Stable workflows can be (semi-) automatically transformed into a formal specification such as CWL. The Formal specification is compatible with workflow publishing platforms and execution engines like Nextflow or SnakeMake (vide infra). Stable workflows will be annotated with metadata and can be published in appropriate repositories using a PID system like DOI or ARK0.
-
-## Key benefits
-SciWIn outputs reproducible research objects as FAIR DOs. By using already existing build blocks of existing workflows a lot of time can be saved, especially for common data integration and processing tasks. Furthermore collaboration between different research groups is possible which can lead to more productivity. Versioning of workflows and data provides reproducible research objects without the pitfall of breaking changes. Publication in appropriate repositories enables multiple benefits.
+- Workflows can be (semi-) automatically transformed into a formal specification 
+- Compatible with workflow publishing platforms and execution engines 
+- Stable workflow is annotated with metadata (linked data, schema.org) to make it findable
+- Publication of the FAIR DO in an appropriate repository brokered by FAIRagro Middleware
+- Repository registers research object in a PID system (DOI, ARK)
 
 ## Roadmap
 ![Roadmap](./assets/roadmap.svg)

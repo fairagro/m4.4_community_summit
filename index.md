@@ -17,21 +17,20 @@ FAIR[^1] research is becoming increasingly important, but developing and publish
 ![Concept](./assets/concept3.svg)
 ![Concept](./assets/conceptro3.svg)
 
-SciWIn will be able to integrate workflows and data from multiple repositories including a SciWIn Workflow Hub which will be developed in the process. Access of different research objects (RO) for workflow development will be handled by a central server. A stable workflow within a research object can be (semi-)automatically transformed into a formal workflow specification (e.g. CWL[^2]).
-The SciWIn Workflow Engine will be able to execute such workflows. Stable Workflows are annotated with meta data and can be published to an appropriate repository that registers it with a PID[^3] (e.g. DOI[^4]).
+As its name implies the **execution of computational workflows** will be a key part of SciWIn. Scientists will be able to communicate with the central **SciWIn Hub** component via a graphical user interface (GUI). Workflows contained in research objects (RO) following a formal workflow specification (e.g. CWL[^2]) can be uploaded to SciWIn Hub packed as RO-Crates. Once objects are handled by SciWIn Hub they are available as FAIR DOs[^5] with a PID[^3] (e.g. DOI[^4]). Workflows will be executed by the **SciWIn Compute Servers**, results including **full provenance information** are passed back to SciWIn Hub which informs the Scientist. SciWIn Hub will also communicate with the FAIRagro Middleware (Measure 4.2)[^6] which handles bidirectional communication with various repositories.
+
 
 ## Re-usable data handling
 A multi-step workflow for data tranformation, modification, pre-processing and integration will be provided by the user. The research object keeps track of different versions and pushes its data to the central server. Versioning furthermore enables iterative development including bug fixes and other changes. The central server facilitates collaboration by providing access to organized reserach objects.
 
 ## Data Integration
-
 Users will be able to view multiple research objects, download parts of it (e.g. code, data, metadata, workflows, ...) and recombine those parts in new research objects. Derived parts link back to the original parts on the central server much like GitHub/GitLab forks. This provides an easy way to create new research objects by using already existing building blocks.
 
 ## Workflow execution and FAIR publication
 Stable workflows can be (semi-) automatically transformed into a formal specification such as CWL. The Formal specification is compatible with workflow publishing platforms and execution engines like Nextflow or SnakeMake (vide infra). Stable workflows will be annotated with metadata and can be published in appropriate repositories using a PID system like DOI or ARK0.
 
 ## Key benefits
-SciWIn outputs reproducible research objects as FAIR DOs[^5]. By using already existing build blocks of existing workflows a lot of time can be saved, especially for common data integration and processing tasks. Furthermore collaboration between different research groups is possible which can lead to more productivity. Versioning of workflows and data provides reproducible research objects without the pitfall of breaking changes. Publication in appropriate repositories enables multiple benefits.
+SciWIn outputs reproducible research objects as FAIR DOs. By using already existing build blocks of existing workflows a lot of time can be saved, especially for common data integration and processing tasks. Furthermore collaboration between different research groups is possible which can lead to more productivity. Versioning of workflows and data provides reproducible research objects without the pitfall of breaking changes. Publication in appropriate repositories enables multiple benefits.
 
 ## Roadmap
 ![Roadmap](./assets/roadmap.svg)
@@ -43,3 +42,4 @@ SciWIn outputs reproducible research objects as FAIR DOs[^5]. By using already e
 [^3]: **P**ersistant **ID**entifier
 [^4]: **D**igital **O**bject **I**dentifier
 [^5]: FAIR **D**igital **O**bject
+[^6]: Information about Measure 4.2 can be found in the [FAIRagro Proposal](https://doi.org/10.5281/zenodo.8366884)

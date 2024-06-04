@@ -20,7 +20,26 @@ body {
 .main-content > p > img {
   display: flex;
   margin: auto;
-  max-width: 90%;
+}
+.main-content {
+  p:has(img) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    @include medium {
+      flex-wrap: nowrap;
+    }
+    > img:only-child {
+      max-width: 100% !important;
+    }
+    > img:first-child {
+      max-width: 60%;
+    }
+    > img:nth-child(2) {
+      max-width: 40%;
+    }
+  }
 }
 
 .page-header {

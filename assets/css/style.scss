@@ -29,7 +29,7 @@ body {
     img {
       max-width: 100%;
     }
-    @include medium {
+    @media screen and (min-width: $medium-breakpoint) {
       flex-wrap: nowrap;
       > img:only-child {
         max-width: 100% !important;

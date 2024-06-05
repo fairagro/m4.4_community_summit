@@ -23,13 +23,11 @@ body {
 }
 
 @media screen and (min-width: #{$medium-breakpoint}) {
-  .main-content {
-    p:has(img):not(:has(img:only-child)) {
-      width: 90vw;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+  .main-content p:has(img):not(p:has(img:only-child)) {
+    width: 90vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

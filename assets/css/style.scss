@@ -25,20 +25,24 @@ body {
   p:has(img) {
     display: flex;
     flex-wrap: wrap;
-    flex-wrap: wrap;
     img {
       max-width: 100%;
     }
     @media screen and (min-width: #{$medium-breakpoint}) {
+      width: 90vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      
       flex-wrap: nowrap;
       > img:only-child {
         max-width: 100% !important;
       }
       > img:first-child {
-        max-width: 70%;
+        max-width: 65%;
       }
       > img:nth-child(2) {
-        max-width: 30%;
+        max-width: 35%;
       }
     }
   }

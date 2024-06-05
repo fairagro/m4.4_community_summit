@@ -42,6 +42,8 @@ Workflows are annotated with metadata (linked data, schema.org) and some kind of
 
 ## Roadmap
 ![Roadmap](./assets/roadmap.svg)
+
+
 The SciWIn Roadmap as presented in the FAIRagro Proposal starts with the concept phase in early 2024. A proof-of-concept stage will hopefully be reached in late 2026 according to the planned timeframe.
 
 ## Download

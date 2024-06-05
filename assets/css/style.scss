@@ -29,11 +29,12 @@ body {
       max-width: 100%;
     }
     @media screen and (min-width: #{$medium-breakpoint}) {
-      width: 90vw;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      
+      :not(:has(img:only-child)) {
+        width: 90vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
       flex-wrap: nowrap;
       > img:only-child {
         max-width: 100% !important;

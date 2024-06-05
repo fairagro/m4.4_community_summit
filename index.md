@@ -17,31 +17,49 @@ FAIR[^1] research is becoming increasingly important, but developing and publish
 ![Concept](./assets/SciWInConcept.svg)
 ![Concept](./assets/SciWInRO.svg)
 
-As its name implies the **execution of computational workflows** will be a key part of SciWIn. Scientists will be able to communicate with the central **SciWIn Hub** component via a graphical user interface (GUI). Workflows contained in research objects (RO) following a formal workflow specification (e.g. CWL[^2]) can be uploaded to SciWIn Hub packed as RO-Crates. Once objects are handled by SciWIn Hub they are available as FAIR DOs[^5] with a PID[^3] (e.g. DOI[^4]). Workflows will be executed by the **SciWIn Compute Servers**, results including **full provenance information** are passed back to SciWIn Hub which informs the Scientist. SciWIn Hub will also communicate with the FAIRagro Middleware (Measure 4.2)[^6] which handles bidirectional communication with various repositories.
+As this is an early concept of SciWIn details may change in the future but the overall idea is presented herein. Implied by the name "Scientific Workflow Infrastructure" (SciWIn) the **execution of computational workflows**"** will be a key feature of SciWIn. The Researcher will be able to interact with the easy-to-use interface of **SciWIn Hub** by using some kind of **SciWIn Client Software** to work on and create new research objects (RO) containing new or already existing computational workflows. Research objects will be sent as RO-Crates.
+
+When handled by SciWIn Hub, a RO will get a PID[^3] (e.g. DOI[^4]) since ROs will be represented as FAIR DOs[^5] (FDO) on SciWIn Hub. 
+Workflows will be executed by the **SciWIn Compute Servers**, results including **full provenance information** are passed back to SciWIn Hub which informs the Scientist. The SciWIn Compute Servers will be able to execute Workflows using state-of-the-art Workflow-Engines such as CWLTool, SnakeMake, Nextflow or Galaxy however researches are pleased to send Workflows in CWL[^7] format.
+SciWIn Hub will also communicate with the **FAIRagro Middleware** (Measure 4.2)[^6] which handles bidirectional communication with various data repositories.
+
+Research Objects can contain a lot of different components like data, code, workflows, metadata and provenance each of them being optional. ROs can also point to some kind of large data (multiple TB) in remote data inventories. By using git ROs and its components will be versioned out of the box.
 
 
 ## Re-usable data handling
-- The user records ad-hoc workflow for data pre-processing, transformation, analysis, … 
-- Iterative & collaborative workflow development including version control of data and code
-- Creation of shareable research objects with provenance information & metadata
-- SciWIn Hub facilitates collaboration by providing shared access to research objects
+The Scientist will record ad-hoc workflows for data pre-processing, data transformation or data analysis by using the SciWIn Client. By the use of git an iterative and **collaborative workflow development** including version control of data and code is possible which furhter **improves the overall user experience**. Research objects will be FAIR DOs which makes the creation of shareable research objects with provenance information & metadata easy,
+
 
 ## Integration & exploration
-- Explore research objects (RO) on SciWIn Hub
-- Download parts (code, data, metadata)
-- Recombine artifacts in new research objects
-- Upload to SciWIn Hub to integrate into RO collection
+As SciWIn Hub contains some kind of RO collection the possibility to explore of research objects (RO) on SciWIn Hub will also enable the scientist to download parts (code, data, metadata), recombine artifacts in new research objects and upload to SciWIn Hub to integrate new ROs into the RO collection. ROs derived from already existing parts will have their parts point to the original parts to ensure traceability of the creation process. This process could also be called as a mix and match feature.
 
 
-## Workflow execution and FAIR publication
-- Workflows can be (semi-) automatically transformed into a formal specification 
-- Compatible with workflow publishing platforms and execution engines 
-- Stable workflow is annotated with metadata (linked data, schema.org) to make it findable
-- Publication of the FAIR DO in an appropriate repository brokered by FAIRagro Middleware
-- Repository registers research object in a PID system (DOI, ARK)
+## Workflow execution
+Workflows can be(semi-)automatically transformed into a formal specification like CWL. SciWIn will be compatible with workflow publishing platforms like workflowhub.eu which makes collaboration and creation of workflows even easier. Furthermore all major execution engines such as CWLTool, SnakeMake, Nextflow or Galaxy will likely to be supported. 
+
+## FAIR Publication
+Workflows are annotated with metadata (linked data, schema.org) and some kind of unique persisten identifier to make it findable. ROs will also be published by using an existing PID system (DOI, ARK). Publication of the FAIR DO in an appropriate repository will be brokered by FAIRagro Middleware.
 
 ## Roadmap
 ![Roadmap](./assets/roadmap.svg)
+The SciWIn Roadmap as presented in the FAIRagro Proposal starts with the concept phase in early 2024. A proof-of-concept stage will hopefully be reached in late 2026 according to the planned timeframe.
+
+## Download
+The presented poster and the slides of the lightning talk can be downloaded by clicking the buttons below (CC-BY 4.0).
+
+**TODO**: nicer & working buttons^^
+
+<kbd>
+<br/>
+Dowload Poster
+<br/><br/>
+</kbd>
+<kbd>
+<br/>
+Dowload Slides
+<br/><br/>
+</kbd>
+
 
 ***
 
@@ -51,3 +69,4 @@ As its name implies the **execution of computational workflows** will be a key p
 [^4]: **D**igital **O**bject **I**dentifier
 [^5]: FAIR **D**igital **O**bject
 [^6]: Information about Measure 4.2 can be found in the [FAIRagro Proposal](https://doi.org/10.5281/zenodo.8366884)
+[^7]: **C**ommon **W**orkflow **L**anguage

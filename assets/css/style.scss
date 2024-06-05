@@ -29,7 +29,7 @@ body {
       max-width: 100%;
     }
     @media screen and (min-width: #{$medium-breakpoint}) {
-      :not(:has(img:only-child)) {
+      &:not(:has(img:only-child)) {
         width: 90vw;
         position: relative;
         left: 50%;

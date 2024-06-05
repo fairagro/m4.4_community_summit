@@ -21,6 +21,18 @@ body {
   display: flex;
   margin: auto;
 }
+
+@media screen and (min-width: #{$medium-breakpoint}) {
+  .main-content {
+    p:has(img):not(:has(img:only-child)) {
+      width: 90vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
 .main-content {
   p:has(img) {
     display: flex;
@@ -29,12 +41,6 @@ body {
       max-width: 100%;
     }
     @media screen and (min-width: #{$medium-breakpoint}) {
-      &:not(:has(img:only-child)) {
-        width: 90vw;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-      }
       flex-wrap: nowrap;
       > img:only-child {
         max-width: 100% !important;

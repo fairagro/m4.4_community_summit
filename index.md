@@ -49,7 +49,10 @@ The SciWIn Roadmap as presented in the FAIRagro Proposal starts with the concept
 ## Download
 The presented poster and the slides of the lightning talk can be downloaded by clicking the buttons below (CC-BY 4.0).
 
-<a href="https://doi.org/10.5281/zenodo.11619214" class="button">Poster (10.5281/zenodo.11619214)</a>
+<div class="buttons">
+    <a href="https://doi.org/10.5281/zenodo.11619214" class="button">Poster (10.5281/zenodo.11619214)</a>
+    <a href="#" class="button">Lightning Talk (available soon)</a>
+</div>
 
 ***
 

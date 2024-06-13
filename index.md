@@ -51,7 +51,7 @@ The presented poster and the slides of the lightning talk can be downloaded by c
 
 <div class="buttons">
     <a href="https://doi.org/10.5281/zenodo.11619214" class="button" target="_blank">Poster (10.5281/zenodo.11619214)</a>
-    <a href="#" target="_blank" class="button">Lightning Talk (available soon)</a>
+    <a href="./assets/M44_SciWIn_LightningTalk.pdf" target="_blank" class="button">Lightning Talk</a>
 </div>
 
 ***

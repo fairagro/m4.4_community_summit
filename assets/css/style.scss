@@ -125,8 +125,9 @@ a {
   color: #00917a;
 }
 
-.buttons{
+.buttons {
   display: flex;
+  align-items: baseline;
 }
 
 a.button {
@@ -137,9 +138,12 @@ a.button {
   border-radius: 8px;
   color: #fff;
   background: #00917a;
-  &:hover{
-      background: #a7c637;
-      text-decoration: none;
+  &:hover {
+    background: #a7c637;
+    text-decoration: none;
+  }
+  &:not(:first-child) {
+    margin-left: 8px;
   }
 }
 

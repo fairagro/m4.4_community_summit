@@ -32,6 +32,9 @@ body {
 }
 
 .main-content {
+  @include large{
+    max-width: 84rem;
+  }
   p:has(img) {
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +87,7 @@ body {
 
 .wrapper {
   @include large {
-    max-width: 64rem;
+    max-width: 84rem;
     padding: 0 6rem;
     margin: 0 auto;
   }
